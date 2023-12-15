@@ -1,3 +1,5 @@
+#@armmike
+###########################################
 '''
 Reto #1: EL “LENGUAJE HACKER” 
 Dificultad: Fácil | Publicación: 02/01/23 | Corrección: 09/01/23 
@@ -12,6 +14,7 @@ Enunciado
 */
 
 '''
+###########################################
 def hack_str():
     text = input('Introduce un texto:\n')
     abc_hacker = {' ' : ' ','a' : '4', 'b' : '13', 'c' : '[','d' : ')','e' : '3'
@@ -23,15 +26,17 @@ def hack_str():
                'K' : '>|','L' : '1','M' : '/\/\\', 'N' : '/\\/','O' : '0','P' : '|*',
                  'Q' : '(_.)', 'R' : '12', 'S' : '5','T' : '7','U' : '(_)','V' : '\\/','W' : '\\/\\/',
                  'X' : '><','Y' : 'j', 'Z' : '2'}
-
+    ###########################################
     text_hacker = ''
-
+    ###########################################
     for letra in text:
         if ( abc_hacker.__contains__(letra)):
             text_hacker += abc_hacker[letra]
-            
+    ###########################################        
     print(text)
     print(text_hacker)
 hack_str()
+###########################################
+#@armmike
 
 
